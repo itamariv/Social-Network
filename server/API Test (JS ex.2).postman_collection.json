@@ -1,0 +1,1124 @@
+{
+	"info": {
+		"_postman_id": "71cba978-3a70-4a58-ab3a-7a0ab1e57a3c",
+		"name": "API Test (JS ex.2)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create user #1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('create user #1',function(){\r",
+							"    const {user}=pm.response.json();\r",
+							"    pm.environment.set('id#1',user.id);\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "string",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "      {\r\n          \"f_name\":\"Itamar\",\r\n          \"l_name\":\"Ivri\",\r\n          \"email\": \"itamariv@gmail.com\",\r\n          \"password\":\"123456\"\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "itamar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user #2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('create user #2',function(){\r",
+							"    const {user}=pm.response.json();\r",
+							"    pm.environment.set('id#2',user.id);\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "string",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "      {\r\n          \"f_name\":\"Jim\",\r\n          \"l_name\":\"Morrision\",\r\n          \"email\": \"jim@gmail.com\",\r\n          \"password\":\"jim123\"\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "itamar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user #3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('create user #3',function(){\r",
+							"     const {user}=pm.response.json();\r",
+							"     pm.environment.set('id#3',user.id);\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "string",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "      {\r\n          \"f_name\":\"Mark\",\r\n          \"l_name\":\"Zuckerberg\",\r\n          \"email\": \"mark@gmail.com\",\r\n          \"password\":\"10203040\"\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "itamar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user #4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('create user #4',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "string",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "      {\r\n          \"f_name\":\"Ron\",\r\n          \"l_name\":\"Hulday\",\r\n          \"email\": \"ronh@gmail.com\",\r\n          \"password\":\"abcd1234\"\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/create",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "itamar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login to admin",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Login to admin',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test('has a token', function(){\r",
+							"   const res=pm.response.json();\r",
+							"    pm.environment.set('jwt_token_admin',res.token) //attaching the token we received to our token variable for future use\r",
+							"    return 'token' in res;\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"admin\",\r\n    \"password\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activate user #2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('activate user #2',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_admin}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"{{id#2}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/admin/activate",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"admin",
+						"activate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login to user #1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('User #1 logged in',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test('has a token', function(){\r",
+							"   const res=pm.response.json();\r",
+							"    pm.environment.set('jwt_token_user1',res.token) //attaching the token we received to our token variable for future use\r",
+							"    return 'token' in res;\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n           \"email\": \"itamariv@gmail.com\",\r\n          \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User #1 tries to message (Fail, not activated yet)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('user #1 tries to message user #2 - Fail',function(){\r",
+							"    pm.response.to.have.status(403);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_user1}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"receiverID\":\"{{id#2}}\",\r\n    \"text\":\"It's nice having you here\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/message",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Activate user #1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('activate user #1',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_admin}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"{{id#1}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/admin/activate",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"admin",
+						"activate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User #1 sends message to user #2 (Pass)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('user #1 sends message to user #2',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_user1}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"receiverID\":\"{{id#2}}\",\r\n    \"text\":\"It's nice having you here\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/message",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login to user #2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Login passed',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test('has a token', function(){\r",
+							"   const res=pm.response.json();\r",
+							"    pm.environment.set('jwt_token_user2',res.token) //attaching the token we received to our token variable for future use\r",
+							"    return 'token' in res;\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"email\": \"jim@gmail.com\",\r\n          \"password\":\"jim123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User #2 creates a post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('User #2 created a post',function(){\r",
+							"    const res=pm.response.json();\r",
+							"    pm.environment.set('user2postID',res.PostObj.id)\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_user2}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"I'm literally dead\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/post",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User #2 creates another post",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('User #2 created a post',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_user2}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"just kidding\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/user/post",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User #1 wants to see all posts",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Show posts',function(){\r",
+							"    pm.response.to.have.status(200)\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_user1}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:2718/user/showPosts",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"showPosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user #2 wants to see mailbox",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Show Mailbox',function(){\r",
+							"    pm.response.to.have.status(200)\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_user2}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:2718/user/showMailbox",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"showMailbox"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin deletes post of user #2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('Deleted post of user #2',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_admin}}",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "      {\r\n          \"userID\":\"{{id#2}}\",\r\n          \"postID\":{{user2postID}}\r\n      }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/admin/deletepost",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"admin",
+						"deletepost"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "itamar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Display users list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('show users',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_admin}}",
+						"type": "string"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/admin/listusers",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"admin",
+						"listusers"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "itamar",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin suspends user #1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('user #1 suspended',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_admin}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"{{id#1}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/admin/suspend",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"admin",
+						"suspend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin restores user #1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('user #1 restored',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_admin}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"{{id#1}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/admin/restore",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"admin",
+						"restore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User #1 logs out",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('user #1 logged out',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_user1}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:2718/user/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin deletes user #1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('user #1 deleted',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_admin}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userID\":\"{{id#1}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/admin/deleteuser",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"admin",
+						"deleteuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin sends a message to everyone",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test('admin messaged all',function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"pm.test(responseBody, true)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt_token_admin}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\":\"Goodbye\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:2718/admin/messageall",
+					"host": [
+						"localhost"
+					],
+					"port": "2718",
+					"path": [
+						"admin",
+						"messageall"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"value": "",
+			"type": "string"
+		}
+	]
+}
