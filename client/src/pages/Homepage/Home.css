@@ -1,0 +1,78 @@
+.home {
+  background-color: #7d4dd8;
+background-size : cover;
+  width: 100%;
+  /* height: 100vh; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+   justify-content: center;
+   align-items: center;
+   
+   
+}
+.newPost {
+  background-color: #ffff;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px;
+  margin-bottom: 5vh;
+  /* position:absolute; */
+  /* justify-content: center;
+  align-items: center; */
+      /* top:0; */
+display: inherit;
+/* justify-content: center;
+align-items:center; */
+   margin-left: auto;
+margin-right: auto;
+width:50%;
+  margin-top: 5vh;
+
+}
+.postsSection {
+  background-color: #ffff;
+  background-size : cover;
+  width: 50%;
+  /* height: 100%; */
+  padding: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px;
+  display: inherit;
+   align-items: center;
+   justify-content: center;
+   margin-left: auto;
+margin-right: auto;
+
+}
+.postsSlider {
+      /* margin: 5vh; */
+  display: flex;
+  /* justify-content: center;
+  align-items: center;
+  text-align:center; */
+  
+}
+ 
+
+.newPostsBadge{
+  /* margin:2vh */
+margin-left: auto;
+
+}
+.postBtn{
+/* margin-bottom: 2vh; */
+margin-top: 2vh;
+  justify-content: center;
+  align-items: center;
+}
+.post {
+  background-color: #ffff;
+  padding: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px;
+  margin: 5vh;
+}

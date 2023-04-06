@@ -1,0 +1,11 @@
+#nav{
+     justify-content: center;
+  align-items: center;
+  position:relative;
+ background-color: gray;
+margin-bottom: 5px ;
+}
+
+#nav_box{
+background-color: green;
+}

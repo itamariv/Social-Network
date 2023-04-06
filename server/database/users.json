@@ -1,0 +1,88 @@
+[
+    {
+        "f_name": "admin",
+        "l_name": "admin",
+        "email": "admin",
+        "hash": "95f0a7f42fcfa631b588f1bb52d6e28d401f1aa181c21b95c41f5ea4fc012dcca89f6aa6d4208d57db82b8d453f590022360eee4a199817a6ba160ea45db8455",
+        "salt": "e83cd0c5aa071ff4ed515214af767016",
+        "id": 0,
+        "status": "active",
+        "creation_date": "2022-01-03T14:24:42.288Z",
+        "posts": [],
+        "mailbox": []
+    },
+    {
+        "f_name": "a",
+        "l_name": "a",
+        "email": "a@g.com",
+        "hash": "06003a82f4ceca97613260a118dbfe220cf8ab5bb608b80e1e865c4bf1b53c5ccc102da349e8688d4c60447827d0afee3cbf0d93d9ce39ff4b822e2a19d77453",
+        "salt": "2a27c93d7b5bec45f2569c3f79a30880",
+        "id": "1",
+        "status": "active",
+        "creation_date": "2022-07-06T15:45:10.766Z",
+        "posts": [],
+        "mailbox": [],
+        "sent": []
+    },
+    {
+        "f_name": "asas",
+        "l_name": "asas",
+        "email": "asas",
+        "hash": "312cc914c734757dc4c9fe42176c069083a34c5e3cfd5ea4168a8016181c4aa19e91a054846534a9d429d4f2bf7428adc8f890f53924c3cdc503ac94a58de71c",
+        "salt": "a8036ef687f5d8ecfcf763e7d06a1db3",
+        "id": "2",
+        "status": "created",
+        "creation_date": "2022-09-12T21:17:39.073Z",
+        "posts": [],
+        "mailbox": [],
+        "sent": []
+    },
+    {
+        "f_name": "a",
+        "l_name": "a",
+        "email": "a",
+        "hash": "1ea19d89a02db3f19c87446286626217923455b1dd10802f5d66bd521a563038962cd14e50db94b21bab1ae9b591bf8e9045d00d46e25425fc7ca0e626e51414",
+        "salt": "0dc033d2d5cbfec82ba77f1c50c1889b",
+        "id": "3",
+        "status": "created",
+        "creation_date": "2022-09-12T21:19:32.177Z",
+        "posts": [],
+        "mailbox": [],
+        "sent": []
+    },
+    {
+        "f_name": "a",
+        "l_name": "a",
+        "email": "a",
+        "hash": "f87b85f9c5bbb7c1e2a6c9bbb090957b4a8081fcc9744dbca477e86a4c24db5b4ecf6795e0fd670d1f6e2f785a3e8d6a36f41668ebc67654ffeeb1f7f307267b",
+        "salt": "5090e66f70bb38116c3d002571f5ef2e",
+        "id": "4",
+        "status": "active",
+        "creation_date": "2022-09-12T21:22:36.963Z",
+        "posts": [],
+        "mailbox": [],
+        "sent": []
+    },
+    {
+        "f_name": "Itamar",
+        "l_name": "Ivri",
+        "email": "itamariv@gmail.com",
+        "hash": "fd4471cd6221c7ec4af9484a9a5c40fed4f62c8b02f2bcbdc1ca927ba08975a2425e63bed0a95e542742afc04fa5b22de904a845d41a6069d15ce002edddcf91",
+        "salt": "926893ed74260dbdca01e42dac69416f",
+        "id": "5",
+        "status": "active",
+        "creation_date": "2022-09-13T18:55:54.985Z",
+        "posts": [],
+        "mailbox": [
+            {
+                "text": "aaa",
+                "id": "NaN",
+                "creation_date": "2022-09-13T19:03:54.297Z",
+                "senderName": "undefined undefined",
+                "receiverID": "5",
+                "receiverName": "Itamar Ivri"
+            }
+        ],
+        "sent": []
+    }
+]
